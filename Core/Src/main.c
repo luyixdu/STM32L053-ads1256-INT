@@ -57,7 +57,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int fputc(int ch, FILE *f){
+int fputc(int ch, FILE *f) {
     uint8_t temp[1] = {ch};
     HAL_UART_Transmit(&huart1, temp, 1, 2);//huart1 根据配置修改
     return ch;
@@ -70,61 +70,102 @@ int fputc(int ch, FILE *f){
   */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
-    uint8_t channal_cnt = 0;
+    /* USER CODE BEGIN 1 */
+    int32_t adc[8];
+    int32_t volt[8];
+    uint8_t i;
+    uint8_t ch_num;
 
-  /* USER CODE END 1 */
+    int32_t iTemp;
+    /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+    /* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+    HAL_Init();
 
-  /* USER CODE BEGIN Init */
+    /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+    /* USER CODE END Init */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+    /* Configure the system clock */
+    SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
+    /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+    /* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_USART1_UART_Init();
-  MX_SPI1_Init();
-  MX_TIM6_Init();
-  /* USER CODE BEGIN 2 */
-  DBG("init\r\n");
-   ads1256Init();
-  /* USER CODE END 2 */
+    /* Initialize all configured peripherals */
+    MX_GPIO_Init();
+    MX_USART1_UART_Init();
+    MX_SPI1_Init();
+    MX_TIM6_Init();
+    /* USER CODE BEGIN 2 */
+    DBG("init start\r\n");
+//  HAL_Delay(100);//等基准电压电路稳定, ads1256Init() 内部会进行自校准
+    ads1256Init();
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-//	  DBG("TEST\r\n");
-    /* USER CODE END WHILE */
+    /* 设置PGA增益，数据更新速率 */
+#if 1
+    DBG("\r\nPGA增益 = 1, 数据输出速率 = 15sps, 单端8路扫描\r\n\r\n");
 
-    /* USER CODE BEGIN 3 */
-	  if(exti_flag)
-	  {
-	      exti_flag = 0;
-		  for(channal_cnt = 0X0; channal_cnt < 0X07; channal_cnt ++)
-		  {
-		      ads1256ReadValue(MUXP_AIN0 + channal_cnt);
-		  }
-	  }
+    ADS1256_CfgADC(ADS1256_GAIN_1, ADS1256_30000SPS);	/* 配置ADC参数： 增益1:1, 数据输出速率 15Hz */
+
+    /*
+       中断服务程序会自动读取ADC结果保存在全局变量，主程序通过 ADS1256_GetAdc() 函数来读取这些数据
+    */
+    ADS1256_StartScan(0);	/* 启动中断扫描模式. 0表示单端8路，1表示差分4路 */
+    ch_num = 8;		/* 通道数 = 8 或者4 */
+#else
+    USB_SendStr("\r\nPGA增益 = 1, 数据输出速率 = 15sps, 差分4路扫描\r\n\r\n");
+
+    ADS1256_CfgADC(ADS1256_GAIN_1, ADS1256_15SPS);	/* 配置ADC参数： 增益1:1, 数据输出速率 15Hz */
+
+    /*
+       中断服务程序会自动读取ADC结果保存在全局变量，主程序通过 ADS1256_GetAdc() 函数来读取这些数据
+    */
+    ADS1256_StartScan(1);	/* 启动中断扫描模式. 0表示单端8路，1表示差分4路 */
+    ch_num = 4;		/* 通道数 = 8 或者4 */
+#endif
+
+    /* USER CODE END 2 */
+
+    /* Infinite loop */
+    /* USER CODE BEGIN WHILE */
+    while (1)
+    {
+
+        /* USER CODE END WHILE */
+
+        /* USER CODE BEGIN 3 */
+        for (i = 0; i < ch_num; i++)
+        {
+            /* 从全局缓冲区读取采样结果。 采样结果是在中断服务程序中读取的。*/
+            adc[i] = ADS1256_GetAdc(i);
+            /* 4194303 = 2.5V , 这是理论值，实际可以根据2.5V基准的实际值进行公式矫正 */
+            volt[i] = ((int64_t)adc[i] * 2500000) / 4194303;	/* 计算实际电压值（近似估算），如需准确，请进行校准 */
+        }
+        DBG("[%dCH_NUM]", ch_num);
+        for (i = 0; i < ch_num; i++)
+        {
+            iTemp = volt[i];
+            if (iTemp < 0)
+            {
+                iTemp = -iTemp;
+                DBG("%d=%6d,(-%d.%03d %03d V)", i, adc[i], iTemp /1000000, (iTemp%1000000)/1000, iTemp%1000);
+            }
+            else
+            {
+                DBG("%d=%6d,(%d.%03d %03d V)", i, adc[i], iTemp /1000000, (iTemp%1000000)/1000, iTemp%1000);
+            }
+        }
 //	  voltage = (float)(adcVaule * 5.0 / 8388607); //计算电压
         //filterVoltage = filterlowerpass(voltage);    //低通滤波
 //		filterVoltage2 = kalman_filter(voltage);		 //卡尔玛滤波
 //        printf("voltage:%f\n\t", voltage);
 //        printf("filterVoltage:%f\n\t", filterVoltage2);
-        HAL_Delay(50);
-  }
-  /* USER CODE END 3 */
+    }
+    /* USER CODE END 3 */
 }
 
 /**
@@ -133,45 +174,45 @@ int main(void)
   */
 void SystemClock_Config(void)
 {
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+    RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
-  /** Configure the main internal regulator output voltage
-  */
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_8;
-  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_3;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+    /** Configure the main internal regulator output voltage
+    */
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+    /** Initializes the RCC Oscillators according to the specified parameters
+    * in the RCC_OscInitTypeDef structure.
+    */
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_8;
+    RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_3;
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+    {
+        Error_Handler();
+    }
+    /** Initializes the CPU, AHB and APB buses clocks
+    */
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                                  |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1;
-  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
-  {
-    Error_Handler();
-  }
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+    {
+        Error_Handler();
+    }
+    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1;
+    PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
+    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+    {
+        Error_Handler();
+    }
 }
 
 /* USER CODE BEGIN 4 */
@@ -184,10 +225,10 @@ void SystemClock_Config(void)
   */
 void Error_Handler(void)
 {
-  /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
+    /* USER CODE BEGIN Error_Handler_Debug */
+    /* User can add his own implementation to report the HAL error return state */
 
-  /* USER CODE END Error_Handler_Debug */
+    /* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT
@@ -200,10 +241,10 @@ void Error_Handler(void)
   */
 void assert_failed(uint8_t *file, uint32_t line)
 {
-  /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
-     tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-  /* USER CODE END 6 */
+    /* USER CODE BEGIN 6 */
+    /* User can add his own implementation to report the file name and line number,
+       tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+    /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
 

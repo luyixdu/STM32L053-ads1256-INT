@@ -1,10 +1,10 @@
 Dependencies for Project 'UART_DEMO', Target 'UART_DEMO': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
 F (startup_stm32l053xx.s)(0x60702BBF)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32L053xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l053xx.lst --xref -o uart_demo\startup_stm32l053xx.o --depend uart_demo\startup_stm32l053xx.d)
-F (..\Core\Src\ads1256.c)(0x60704F06)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\ads1256.o --omf_browse uart_demo\ads1256.crf --depend uart_demo\ads1256.d)
-I (../Core/Inc/ads1256.h)(0x60704DB5)
+F (..\Core\Src\ads1256.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\ads1256.o --omf_browse uart_demo\ads1256.crf --depend uart_demo\ads1256.d)
+I (../Core/Inc/ads1256.h)(0x6070BAF4)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -35,16 +35,16 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (../Core/Inc/gpio.h)(0x60702BBB)
-I (../Core/Inc/main.h)(0x60702BBC)
+I (../Core/Inc/main.h)(0x60709C90)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-I (../Core/Inc/tim.h)(0x60702BBC)
+I (../Core/Inc/tim.h)(0x60709A78)
 I (../Core/Inc/spi.h)(0x60702BBC)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
-F (../Core/Src/main.c)(0x60704C52)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\main.o --omf_browse uart_demo\main.crf --depend uart_demo\main.d)
-I (../Core/Inc/main.h)(0x60702BBC)
+F (../Core/Src/main.c)(0x6070BC1C)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\main.o --omf_browse uart_demo\main.crf --depend uart_demo\main.d)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -76,17 +76,17 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (../Core/Inc/spi.h)(0x60702BBC)
-I (../Core/Inc/tim.h)(0x60702BBC)
+I (../Core/Inc/tim.h)(0x60709A78)
 I (../Core/Inc/usart.h)(0x60702BBC)
 I (../Core/Inc/gpio.h)(0x60702BBB)
-I (../Core/Inc/ads1256.h)(0x60704DB5)
+I (../Core/Inc/ads1256.h)(0x6070BAF4)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
-F (../Core/Src/gpio.c)(0x60702BBB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\gpio.o --omf_browse uart_demo\gpio.crf --depend uart_demo\gpio.d)
+F (../Core/Src/gpio.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\gpio.o --omf_browse uart_demo\gpio.crf --depend uart_demo\gpio.d)
 I (../Core/Inc/gpio.h)(0x60702BBB)
-I (../Core/Inc/main.h)(0x60702BBC)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -117,11 +117,11 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (../Core/Src/spi.c)(0x60702BBC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\spi.o --omf_browse uart_demo\spi.crf --depend uart_demo\spi.d)
+F (../Core/Src/spi.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\spi.o --omf_browse uart_demo\spi.crf --depend uart_demo\spi.d)
 I (../Core/Inc/spi.h)(0x60702BBC)
-I (../Core/Inc/main.h)(0x60702BBC)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -152,11 +152,11 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (../Core/Src/tim.c)(0x60702BBC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\tim.o --omf_browse uart_demo\tim.crf --depend uart_demo\tim.d)
-I (../Core/Inc/tim.h)(0x60702BBC)
-I (../Core/Inc/main.h)(0x60702BBC)
+F (../Core/Src/tim.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\tim.o --omf_browse uart_demo\tim.crf --depend uart_demo\tim.d)
+I (../Core/Inc/tim.h)(0x60709A78)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -187,11 +187,11 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (../Core/Src/usart.c)(0x60702BBC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\usart.o --omf_browse uart_demo\usart.crf --depend uart_demo\usart.d)
+F (../Core/Src/usart.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\usart.o --omf_browse uart_demo\usart.crf --depend uart_demo\usart.d)
 I (../Core/Inc/usart.h)(0x60702BBC)
-I (../Core/Inc/main.h)(0x60702BBC)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -222,10 +222,10 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (../Core/Src/stm32l0xx_it.c)(0x60702BBC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_it.o --omf_browse uart_demo\stm32l0xx_it.crf --depend uart_demo\stm32l0xx_it.d)
-I (../Core/Inc/main.h)(0x60702BBC)
+F (../Core/Src/stm32l0xx_it.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_it.o --omf_browse uart_demo\stm32l0xx_it.crf --depend uart_demo\stm32l0xx_it.d)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -256,11 +256,11 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-I (../Core/Inc/stm32l0xx_it.h)(0x60702BBC)
-F (../Core/Src/stm32l0xx_hal_msp.c)(0x60702BBC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_msp.o --omf_browse uart_demo\stm32l0xx_hal_msp.crf --depend uart_demo\stm32l0xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_it.h)(0x60709C90)
+F (../Core/Src/stm32l0xx_hal_msp.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_msp.o --omf_browse uart_demo\stm32l0xx_hal_msp.crf --depend uart_demo\stm32l0xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -293,7 +293,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_spi.o --omf_browse uart_demo\stm32l0xx_hal_spi.crf --depend uart_demo\stm32l0xx_hal_spi.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -325,7 +325,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal.o --omf_browse uart_demo\stm32l0xx_hal.crf --depend uart_demo\stm32l0xx_hal.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -357,7 +357,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_i2c.o --omf_browse uart_demo\stm32l0xx_hal_i2c.crf --depend uart_demo\stm32l0xx_hal_i2c.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -389,7 +389,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_i2c_ex.o --omf_browse uart_demo\stm32l0xx_hal_i2c_ex.crf --depend uart_demo\stm32l0xx_hal_i2c_ex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -421,7 +421,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_rcc.o --omf_browse uart_demo\stm32l0xx_hal_rcc.crf --depend uart_demo\stm32l0xx_hal_rcc.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -453,7 +453,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_rcc_ex.o --omf_browse uart_demo\stm32l0xx_hal_rcc_ex.crf --depend uart_demo\stm32l0xx_hal_rcc_ex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -485,7 +485,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_flash_ramfunc.o --omf_browse uart_demo\stm32l0xx_hal_flash_ramfunc.crf --depend uart_demo\stm32l0xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -517,7 +517,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_flash.o --omf_browse uart_demo\stm32l0xx_hal_flash.crf --depend uart_demo\stm32l0xx_hal_flash.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -549,7 +549,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_flash_ex.o --omf_browse uart_demo\stm32l0xx_hal_flash_ex.crf --depend uart_demo\stm32l0xx_hal_flash_ex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -581,7 +581,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_gpio.o --omf_browse uart_demo\stm32l0xx_hal_gpio.crf --depend uart_demo\stm32l0xx_hal_gpio.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -613,7 +613,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_dma.o --omf_browse uart_demo\stm32l0xx_hal_dma.crf --depend uart_demo\stm32l0xx_hal_dma.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -645,7 +645,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_pwr.o --omf_browse uart_demo\stm32l0xx_hal_pwr.crf --depend uart_demo\stm32l0xx_hal_pwr.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -677,7 +677,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_pwr_ex.o --omf_browse uart_demo\stm32l0xx_hal_pwr_ex.crf --depend uart_demo\stm32l0xx_hal_pwr_ex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -709,7 +709,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_cortex.o --omf_browse uart_demo\stm32l0xx_hal_cortex.crf --depend uart_demo\stm32l0xx_hal_cortex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -741,7 +741,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_tim.o --omf_browse uart_demo\stm32l0xx_hal_tim.crf --depend uart_demo\stm32l0xx_hal_tim.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -773,7 +773,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_tim_ex.o --omf_browse uart_demo\stm32l0xx_hal_tim_ex.crf --depend uart_demo\stm32l0xx_hal_tim_ex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -805,7 +805,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_uart.o --omf_browse uart_demo\stm32l0xx_hal_uart.crf --depend uart_demo\stm32l0xx_hal_uart.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -837,7 +837,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
 F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c)(0x606965E1)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\stm32l0xx_hal_uart_ex.o --omf_browse uart_demo\stm32l0xx_hal_uart_ex.crf --depend uart_demo\stm32l0xx_hal_uart_ex.d)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
@@ -867,7 +867,7 @@ I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h)(0x606965E1)
-F (../Core/Src/system_stm32l0xx.c)(0x606965D3)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\system_stm32l0xx.o --omf_browse uart_demo\system_stm32l0xx.crf --depend uart_demo\system_stm32l0xx.d)
+F (../Core/Src/system_stm32l0xx.c)(0x6070BADB)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_UART_DEMO-IC:\Users\Baymax\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\Baymax\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.0.1\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32L053xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L053xx-o uart_demo\system_stm32l0xx.o --omf_browse uart_demo\system_stm32l0xx.crf --depend uart_demo\system_stm32l0xx.d)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x606965D3)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l053xx.h)(0x606965D3)
 I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x606965D4)
@@ -877,7 +877,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x606965D4)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x606965D4)
 I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x606965D3)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h)(0x606965E1)
-I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60702BBC)
+I (../Core/Inc/stm32l0xx_hal_conf.h)(0x60709C90)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rcc.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_def.h)(0x606965E1)
 I (../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x606965E1)
